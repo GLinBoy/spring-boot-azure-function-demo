@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/java,kotlin,gradle,windows,linux,macos,eclipse,intellij+all,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,kotlin,gradle,windows,linux,macos,eclipse,intellij+all,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/java,linux,macos,gradle,kotlin,eclipse,windows,intellij+all,visualstudiocode,maven,netbeans
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,linux,macos,gradle,kotlin,eclipse,windows,intellij+all,visualstudiocode,maven,netbeans
 
 ### Eclipse ###
 .metadata
@@ -243,6 +242,35 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -261,12 +289,6 @@ Temporary Items
 # Ignore all local history of files
 .history
 .ionide
-
-# Support for Project snippet scope
-.vscode/*.code-snippets
-
-# Ignore code-workspaces
-*.code-workspace
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -313,8 +335,10 @@ gradle-app.setting
 
 # Eclipse Gradle plugin generated files
 # Eclipse Core
-.project
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
 
-# End of https://www.toptal.com/developers/gitignore/api/java,kotlin,gradle,windows,linux,macos,eclipse,intellij+all,visualstudiocode
+### Gradle Patch ###
+# Java heap dump
+*.hprof
+
+# End of https://www.toptal.com/developers/gitignore/api/java,linux,macos,gradle,kotlin,eclipse,windows,intellij+all,visualstudiocode,maven,netbeans
