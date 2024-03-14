@@ -27,7 +27,7 @@ public class HelloFunction {
 		
 		return request
 				.createResponseBuilder(HttpStatus.OK)
-				.body(Map.of("message", name))
+				.body(Map.of("message", String.format("Hello %s!", name)))
 				.header("Content-Type", "application/json")
 				.build();
 	}
