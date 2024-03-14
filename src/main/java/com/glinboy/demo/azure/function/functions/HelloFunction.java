@@ -19,8 +19,10 @@ import com.microsoft.azure.functions.annotation.HttpTrigger;
 public class HelloFunction {
 
 	@FunctionName("hello")
-	public HttpResponseMessage execute(@HttpTrigger(name = "request", methods = { HttpMethod.GET,
-			HttpMethod.POST }, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage<Optional<User>> request,
+	public HttpResponseMessage execute(
+			@HttpTrigger(name = "request",
+				methods = { HttpMethod.GET},
+				authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage<Optional<User>> request,
 			ExecutionContext context) {
 		
 		String name = request.getQueryParameters().getOrDefault("name", "world");
