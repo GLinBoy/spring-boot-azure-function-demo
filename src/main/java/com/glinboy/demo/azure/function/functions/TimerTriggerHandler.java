@@ -1,4 +1,4 @@
-package com.glinboy.demo.azure.function;
+package com.glinboy.demo.azure.function.functions;
 
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.azure.functions.annotation.TimerTrigger;
