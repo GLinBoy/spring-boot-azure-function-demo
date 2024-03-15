@@ -13,9 +13,9 @@ import java.util.logging.Logger;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TimerTriggerHandler {
+public class TimerTriggerFunction {
 
-  private static final Logger LOGGER = Logger.getLogger(TimerTriggerHandler.class.getName());
+  private static final Logger LOGGER = Logger.getLogger(TimerTriggerFunction.class.getName());
 
   @FunctionName("callAPIByTimer")
   public void timer(
